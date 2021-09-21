@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<!--Curran Rose-->
+<head>
+    <script src="code.js"></script>
+    <script>
+        alert("This is a test of the alert function!");
+    </script>
+    <title>
+        Prof. Prater's CSC102 Webpage
+    </title>
+    <!--This changes the background color-->
+    <style>
+        body{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="UATspaceLogo-1.jpg">
+    <h1>
+        UAT Space Program
+    </h1>
+    <script>
+        document.write("This is a test of the document.write function");
+    </script>
+    <p>
+        This is a test of the paragraph tags.
+    </p> <br>
+    <button onclick="startTimer();">
+        Start
+    </button>
+    <button>
+        Stop
+    </button>
+    <br>
+    <br>
+    <p id="countdownTimer">Starting countdownTimer...</p>
+    <script>
+        var currTime = 20;
+        function startTimer(){setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 2000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 4000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 6000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 8000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 10000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 12000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 14000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 16000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = currTime;
+        }, 18000);
+        setTimeout(function(){
+            currTime = currTime - 2;
+            document.getElementById("countdownTimer").innerHTML = "Blastoff";
+        }, 20000);
+    }
+    </script>
+    <button onclick="playCraps();">Play Craps</button>
+</body>
+
+</html>
